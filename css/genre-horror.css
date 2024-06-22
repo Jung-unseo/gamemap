@@ -1,0 +1,118 @@
+/* fonts */
+@font-face {
+  font-family: 'NeoDunggeunmo';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-purple: #dcdff0;
+  --main-pink: #fae8f1;
+}
+
+/* 기본 여백 제거 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'NeoDunggeunmo';
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+button,
+a {
+  all: unset;
+  cursor: pointer;
+}
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: var(--main-pink);
+}
+
+.container .align-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3.5rem;
+}
+
+.align-container .genre-title {
+  width: 13%;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 900;
+  background-color: #fff;
+  border-radius: 33px;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.align-container .genre-detail {
+  font-size: 1.2rem;
+  color: #000;
+  margin-top: 1.5rem;
+}
+
+.align-container .horror-container {
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
+.horror-container .horror-align-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+.horror-align-container .horror-game-container {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  height: 18vw;
+  background-color: #fff;
+  border-radius: 70px;
+  overflow: hidden;
+}
+.horror-align-container .horror-game-container:hover {
+  outline: 5px dashed var(--main-purple);
+  opacity: 0.8;
+}
+
+.horror-align-container .horror-game-container > a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+.horror-game-container > a .horror-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.horror-game-container > a .horror-img-container > img {
+  width: 130%;
+}
+.horror-game-container > a .horror-img-container.img-down > img {
+  transform: translateY(50px);
+}
+.horror-game-container > a .horror-img-container.img-up > img {
+  transform: translateY(-50px);
+}

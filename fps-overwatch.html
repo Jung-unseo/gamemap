@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAME MAP - OVERWATCH(FPS)</title>
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/fps-overwatch.css?v=1.0" />
+    <script src="./js/fps-overwatch.js?v=1.0" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="align-container">
+        <div class="top-container">
+          <div class="game-title">FPS -> 오버워치</div>
+          <a
+            href="https://overwatch.blizzard.com/ko-kr/"
+            class="game-site"
+            target="_blank"
+            >공식홈</a
+          >
+        </div>
+        <p class="game-description">
+          “ 희망적인 미래를 배경으로 펼쳐지는 팀 기반 액션 무료 플레이 게임으로,
+          지구를 누비며 세계 각지의 다양한 지역에서 미래를 위해 싸우세요! ”
+        </p>
+        <div class="radio-container">
+          <input id="story" type="radio" name="select" value="스토리" />
+          <label class="label" for="story">스토리</label>
+          <input
+            checked
+            id="character"
+            type="radio"
+            name="select"
+            value="캐릭터"
+          />
+          <label class="label" for="character">캐릭터</label>
+          <input id="battlefield" type="radio" name="select" value="전장" />
+          <label class="label" for="battlefield">전장</label>
+        </div>
+        <div class="game-contents-container">
+          <!-- 스토리 -->
+          <div class="game-contents story show">
+            <div class="game-info-container">
+              <div class="info-container">
+                <p>출시일:</p>
+                <p>2022년 10월 4일</p>
+              </div>
+              <div class="info-container">
+                <p>제작/배급:</p>
+                <p>블리자드 엔터테이먼트</p>
+              </div>
+              <div class="info-container">
+                <p>플랫폼:</p>
+                <p>
+                  Microsoft Windows<br />
+                  PlayStation 4, PlayStation 5<br />
+                  Xbox One, Xbox Series X/S<br />
+                  Nintendo Switch
+                </p>
+              </div>
+              <div class="info-container">
+                <p>등급:</p>
+                <p>12세 이용가, 15세 이용가</p>
+              </div>
+              <div class="info-container">
+                <p>장르:</p>
+                <p>팀 기반 멀티플레이어 1인칭 슈팅 게임</p>
+              </div>
+              <div class="info-container">
+                <p>난이도:</p>
+                <img src="./img/icon/star.png" alt="star" />
+              </div>
+            </div>
+            <div class="game-description-container">
+              <p>
+                미래 세계에서 로봇 옴닉들이 반란을 일으켜 전 세계적으로 위기가
+                발생하는 옴닉 크라이시스가 주요 배경입니다. 이를 해결하기 위해
+                국제연합(UN)은 특수 임무 부대인 오버워치를 설립합니다.
+                오버워치는 다양한 능력을 가진 영웅들로 구성되어 위기를
+                종식시킵니다.
+              </p>
+              <p>
+                그러나 오버워치는 내부 갈등과 외부 음모로 인해 해체됩니다.
+                지도자 모리슨과 레예스 간의 충돌, 타락한 인물들의 활동이 주요
+                원인입니다. 해체 후 세계 곳곳에서 새로운 위협들이 나타나자 옛
+                오버워치 요원들은 다시 모여 새로운 위협에 맞서 싸우기
+                시작합니다.
+              </p>
+            </div>
+          </div>
+          <!-- 캐릭터 -->
+          <div class="game-contents character">
+            <!-- 돌격 -->
+            <div class="character-container">
+              <div class="character-title-container">
+                <div class="character-position-img">
+                  <img src="./img/icon/tank.png" alt="tank" />
+                </div>
+                <p>돌격</p>
+              </div>
+              <div class="character-contents-container">
+                <div class="character-img-container">
+                  <div class="character-name">D.VA</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/dva.jpg"
+                    alt="dva"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">둠피스트</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/doomfist.png"
+                    alt="doomfist"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">라마트라</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/rama.png"
+                    alt="rama"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">라인하르트</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/rein.png"
+                    alt="rein"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">레킹볼</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/wrecking-ball.png"
+                    alt="wrecking-ball"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">로드호그</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/roadhog.png"
+                    alt="roadhog"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">마우가</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/mauga.png"
+                    alt="mauga"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">시그마</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/sigma.png"
+                    alt="sigma"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">오리사</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/orisa.png"
+                    alt="orisa"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">윈스턴</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/winston.png"
+                    alt="winston"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">자리야</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/zarya.png"
+                    alt="zarya"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">정커퀸</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/tank/junker-queen.png"
+                    alt="junker-queen"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 공격 -->
+            <div class="character-container">
+              <div class="character-title-container">
+                <div class="character-position-img">
+                  <img src="./img/icon/dps.png" alt="dps" />
+                </div>
+                <p>공격</p>
+              </div>
+              <div class="character-contents-container">
+                <div class="character-img-container">
+                  <div class="character-name">솔저: 76</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/soldier.png"
+                    alt="soldier"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">메이</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/mei.png"
+                    alt="mei"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">솜브라</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/sombra.png"
+                    alt="sombra"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">시메트라</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/symmetra.png"
+                    alt="symmetra"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">애쉬</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/bastion.png"
+                    alt="bastion"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">겐지</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/genji.png"
+                    alt="genji"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">리퍼</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/reaper.png"
+                    alt="reaper"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">애쉬</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/ashe.png"
+                    alt="ashe"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">에코</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/echo.png"
+                    alt="echo"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">위도우<br />메이커</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/widow.png"
+                    alt="widow"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">정크랫</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/junk.png"
+                    alt="junk"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">캐서디</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/mcc.png"
+                    alt="mcc"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">소전</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/sojeon.png"
+                    alt="sojeon"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">벤처</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/ventuer.jpg"
+                    alt="ventuer"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">토르비욘</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/torb.png"
+                    alt="torb"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">트레이서</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/tracer.png"
+                    alt="tracer"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">파라</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/pharah.png"
+                    alt="pharah"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">한조</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/dps/hanzo.png"
+                    alt="hanzo"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 지원 -->
+            <div class="character-container">
+              <div class="character-title-container">
+                <div class="character-position-img">
+                  <img src="./img/icon/support.png" alt="support" />
+                </div>
+                <p>지원</p>
+              </div>
+              <div class="character-contents-container">
+                <div class="character-img-container">
+                  <div class="character-name">메르시</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/support/mercy.png"
+                    alt="mercy"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">모이라</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/support/moira.png"
+                    alt="moira"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">바티스트</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/support/baptiste.png"
+                    alt="baptiste"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">브리기테</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/support/bri.png"
+                    alt="bri"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">아나</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/support/ana.png"
+                    alt="ana"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">젠야타</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/support/zenyatta.png"
+                    alt="zenyatta"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">라이프위버</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/support/lifeweaver.png"
+                    alt="lifeweaver"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">일리아리</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/support/illari.png"
+                    alt="illari"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">루시우</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/support/lucio.png"
+                    alt="lucio"
+                  />
+                </div>
+                <div class="character-img-container">
+                  <div class="character-name">키리코</div>
+                  <img
+                    class="character-img"
+                    src="./img/overwatch-hero/support/kiriko.png"
+                    alt="kiriko"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 전장 -->
+          <div class="game-contents battlefield">
+            <div class="battlefield-container">
+              <!-- 호위 -->
+              <div class="battlefield-contents-container">
+                <div class="battlefield-description">
+                  <div class="description">호위</div>
+                  <p>
+                    공격팀은 제한 시간 안에 화물을 배송 지점까지 호위해야 하며,
+                    수비팀은 제한 시간이 다 지날 때까지 공격팀을 저지해야합니다.
+                  </p>
+                </div>
+                <div class="battlefield-map">
+                  <img src="./img/icon/arrow.png" alt="arrow" />
+                  <p>
+                    66번국도, 감시기지:지브롤터, 도라도, 리알토, 쓰레기촌,
+                    하바나
+                  </p>
+                </div>
+              </div>
+              <!-- 쟁탈 -->
+              <div class="battlefield-contents-container">
+                <div class="battlefield-description">
+                  <div class="description">쟁탈</div>
+                  <p>
+                    두 팀이 정해진 시간 동안 하나의 거점을 두고 격돌합니다. 먼저
+                    두 라운드를 승리하는 팀이 경기에서 최종 승리합니다.
+                  </p>
+                </div>
+                <div class="battlefield-map">
+                  <img src="./img/icon/arrow.png" alt="arrow" />
+                  <p>네팔, 리장 타워, 부산, 오아시스, 일리오스, 파리</p>
+                </div>
+              </div>
+              <!-- 점령/호위 -->
+              <div class="battlefield-contents-container">
+                <div class="battlefield-description">
+                  <div class="description">점령/호위</div>
+                  <p>
+                    공격팀은 화물을 차지하고 목표 지점까지 호위해야 하며, 수비
+                    팀은 이들을 저지해야 합니다.
+                  </p>
+                </div>
+                <div class="battlefield-map">
+                  <img src="./img/icon/arrow.png" alt="arrow" />
+                  <p>눔바니, 블리자드 월드, 아이헨발데, 왕의 길, 할리우드</p>
+                </div>
+              </div>
+              <!-- 기타 -->
+              <div class="battlefield-contents-container">
+                <div class="battlefield-description">
+                  <div class="description">기타</div>
+                  <p>투기장, 점령, 데스매치, 깃발 뺏기, 팀 데스매치</p>
+                </div>
+                <div class="battlefield-map">
+                  <img src="./img/icon/arrow.png" alt="arrow" />
+                  <p>
+                    검은 숲, 네크로폴리스, 카스티요, 탐사기지:남극, 볼스카야
+                    인더스트리, 아누비스 신전, 하나무라, 호라이즌 달 기지, 샤토
+                    기야르, 카네자카, 페트라, 아유타야
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

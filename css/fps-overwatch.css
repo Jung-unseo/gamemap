@@ -1,0 +1,320 @@
+/* fonts */
+@font-face {
+  font-family: 'NeoDunggeunmo';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-purple: #dcdff0;
+  --main-pink: #fae8f1;
+}
+
+/* 기본 여백 제거 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'NeoDunggeunmo';
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+button,
+a {
+  all: unset;
+  cursor: pointer;
+}
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container .align-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3.5rem;
+}
+
+.top-container {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.top-container .game-title {
+  /* width: 20%; */
+  color: #fff;
+  font-size: 1.8rem;
+  background-color: #a8afca;
+  border-radius: 33px;
+  padding: 0.8rem 4.5rem;
+  text-align: center;
+}
+
+.top-container .game-site {
+  font-size: 1.4rem;
+  border: 2px solid var(--main-purple);
+  color: #949fd0;
+  padding: 0.6rem 2rem;
+}
+.top-container .game-site:hover {
+  background-color: var(--main-purple);
+  color: #fff;
+}
+
+.game-description {
+  font-size: 1.2rem;
+  color: #000;
+  margin-top: 1.5rem;
+}
+
+.radio-container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  gap: 40px;
+}
+
+input[type='radio'] {
+  display: none;
+}
+.label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  position: relative;
+  background-color: var(--main-purple);
+  padding: 1rem 1rem;
+}
+.label:nth-child(2) {
+  margin-left: 60px;
+}
+.label::before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-bottom: 40px solid var(--main-purple);
+  border-left: 20px solid transparent;
+}
+.label::after {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-bottom: 40px solid var(--main-purple);
+  border-right: 20px solid transparent;
+}
+
+.label:nth-child(4) {
+  background-color: #bdc2d8;
+}
+.label:nth-child(4)::before,
+.label:nth-child(4)::after {
+  border-bottom-color: #bdc2d8;
+}
+.label:nth-child(6) {
+  background-color: #a8afca;
+}
+.label:nth-child(6)::before,
+.label:nth-child(6)::after {
+  border-bottom-color: #a8afca;
+}
+
+.game-contents-container {
+  width: 100%;
+  height: 74vh;
+  background-color: var(--main-purple);
+  border-radius: 20px;
+}
+
+.game-contents {
+  display: none;
+}
+
+.game-contents.story.show,
+.game-contents.character.show,
+.game-contents.battlefield.show {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 2rem 2.5rem;
+}
+
+.game-contents.character.show {
+  width: 100%;
+  height: 100%;
+}
+
+/* 스토리 */
+.game-contents.story.show {
+  padding: 2.5rem 3rem;
+}
+.game-info-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info-container {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.info-container > p {
+  font-size: 1.4rem;
+}
+.info-container > img {
+  width: 170px;
+}
+
+.game-description-container {
+  display: flex;
+  flex-direction: column;
+}
+.game-description-container > p {
+  color: #8969bc;
+  font-size: 2rem;
+  margin-top: 2.8rem;
+}
+
+/* 캐릭터 */
+.character-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.character-title-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.character-position-img {
+  width: 35px;
+  height: 35px;
+}
+
+.character-position-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.character-title-container > p {
+  font-size: 1.7rem;
+  color: #000;
+}
+
+.character-contents-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 1.8rem 0;
+  flex-wrap: wrap;
+}
+
+.character-img-container {
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.character-name {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000081;
+  color: #fff;
+  font-size: 1.15rem;
+  text-align: center;
+  transform: translateY(100px);
+  transition: all 0.4s;
+}
+.character-img-container:hover .character-name {
+  transform: translateY(0);
+  transition: 0.3s;
+}
+
+.character-contents-container .character-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 전장 */
+.battlefield-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+  margin-top: 1.5rem;
+}
+.battlefield-contents-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.battlefield-contents-container .battlefield-description {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.battlefield-description .description {
+  width: 170px;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 0.6rem 2.1rem;
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-align: center;
+}
+.battlefield-description > p {
+  font-size: 1.4rem;
+}
+.battlefield-contents-container .battlefield-map {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding-left: 5rem;
+  margin-top: -0.2rem;
+}
+
+.battlefield-map > img {
+  width: 47px;
+}
+.battlefield-map > p {
+  font-size: 1.4rem;
+  color: #fff;
+}
